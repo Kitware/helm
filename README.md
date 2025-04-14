@@ -1,2 +1,2 @@
-# CDash-Helm
-Helm Chart to deploy CDash
+# Kitware Helm
+Helm charts to deploy Kitware-maintained software
