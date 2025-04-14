@@ -1,2 +1,2 @@
-# CDash-helm
+# CDash-Helm
 Helm Chart to deploy CDash
