@@ -47,7 +47,7 @@ cdash:
 
   website:
     resources:
-      limits:
+      requests:
         memory: 256Mi
 
   worker:
@@ -56,7 +56,7 @@ cdash:
     replicas: 1
 
     resources:
-      limits:
+      requests:
         memory: 256Mi
 
 # See here for more config settings: https://github.com/bitnami/charts/tree/main/bitnami/postgresql
