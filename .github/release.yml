@@ -1,0 +1,23 @@
+changelog:
+  exclude:
+    labels:
+      - "release notes: ignored"
+  categories:
+    - title: "New Features"
+      labels:
+        - "release notes: features"
+    - title: "Documentation"
+      labels:
+        - "release notes: documentation"
+    - title: "Deprecations & Removals"
+      labels:
+        - "release notes: deprecated / removed"
+    - title: "Bug Fixes"
+      labels:
+        - "release notes: fixes"
+    - title: "Dependencies"
+      labels:
+        - "release notes: external dependencies"
+    - title: "Other Changes"
+      labels:
+        - "*"
