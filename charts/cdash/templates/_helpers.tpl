@@ -21,21 +21,25 @@ Use https if `cdash.https` is true, otherwise use http.
               secretKeyRef:
                 name: "{{ .Release.Name }}-s3"
                 key: "accesskey"
+                optional: true
           - name: "AWS_BUCKET"
             valueFrom:
               secretKeyRef:
                 name: "{{ .Release.Name }}-s3"
                 key: "bucket"
+                optional: true
           - name: "AWS_REGION"
             valueFrom:
               secretKeyRef:
                 name: "{{ .Release.Name }}-s3"
                 key: "region"
+                optional: true
           - name: "AWS_SECRET_ACCESS_KEY"
             valueFrom:
               secretKeyRef:
                 name: "{{ .Release.Name }}-s3"
                 key: "secretkey"
+                optional: true
           - name: "DB_CONNECTION"
             value: "pgsql"
           - name: "DB_DATABASE"
@@ -43,21 +47,25 @@ Use https if `cdash.https` is true, otherwise use http.
               secretKeyRef:
                 name: "{{ .Release.Name }}-db"
                 key: "database"
+                optional: true
           - name: "DB_HOST"
             valueFrom:
               secretKeyRef:
                 name: "{{ .Release.Name }}-db"
                 key: "host"
+                optional: true
           - name: "DB_PORT"
             valueFrom:
               secretKeyRef:
                 name: "{{ .Release.Name }}-db"
                 key: "port"
+                optional: true
           - name: "DB_USERNAME"
             valueFrom:
               secretKeyRef:
                 name: "{{ .Release.Name }}-db"
                 key: "username"
+                optional: true
           - name: "DB_PASSWORD"
             valueFrom:
               secretKeyRef:
