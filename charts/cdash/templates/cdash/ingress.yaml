@@ -4,6 +4,9 @@ metadata:
   name: {{ .Release.Name }}-website
   labels:
     app: {{ .Release.Name }}-website
+  annotations:
+    nginx.ingress.kubernetes.io/proxy-body-size: "0"
+
 spec:
   ingressClassName: nginx
   {{ if .Values.cdash.https }}
