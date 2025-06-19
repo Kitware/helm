@@ -2,7 +2,7 @@ apiVersion: v2
 name: cdash
 description: CDash aggregates, analyzes and displays the results of software testing processes
 type: application
-version: "0.2.1"
+version: "0.2.2"
 appVersion: "3.10.1"
 dependencies:
   - name: postgresql
