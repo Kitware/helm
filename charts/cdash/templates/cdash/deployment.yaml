@@ -25,6 +25,4 @@ spec:
           command: [ "/bin/bash", "/cdash/docker/docker-entrypoint.sh" ]
           args: [ "start-website" ]
           env:
-          - name: "APP_URL"
-            value: {{ template "cdash.url" . }}
           {{ template "cdash.environment" . }}

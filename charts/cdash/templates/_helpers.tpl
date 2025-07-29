@@ -16,6 +16,8 @@ Use https if `cdash.https` is true, otherwise use http.
               secretKeyRef:
                 name: "{{ .Release.Name }}-website"
                 key: "APP_KEY"
+          - name: "APP_URL"
+            value: {{ template "cdash.url" . }}
           - name: "AWS_ACCESS_KEY_ID"
             valueFrom:
               secretKeyRef:
