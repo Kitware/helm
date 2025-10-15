@@ -25,4 +25,6 @@ spec:
           command: [ "/bin/bash", "/cdash/docker/docker-entrypoint.sh" ]
           args: [ "start-worker" ]
           env:
+          - name: WORKER_MEMORY_LIMIT
+            value: {{ .Values.cdash.worker.worker_memory | quote | default "256" }}
         {{ template "cdash.environment" . }}
